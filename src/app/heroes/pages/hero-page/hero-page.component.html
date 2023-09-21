@@ -1,0 +1,35 @@
+<ng-container *ngIf="heroe; else loading">
+    <h1>{{ heroe.superhero }}</h1>
+    <mat-divider></mat-divider>
+    <div class="grid p-2 mt-2" >
+        <mat-card class="col-12 md:col-4">
+            <img mat-card-image [src]="heroe | heroImage" [alt]="heroe.superhero">
+        </mat-card>
+
+        <mat-card class="col-12 md:col-8">
+            <mat-card-content class="pt-0">
+                <mat-list>
+                    <mat-list-item><strong>Nombre de nacimiento: </strong>{{ heroe.alter_ego }}</mat-list-item>
+                    <mat-list-item><strong>Editorial: </strong>{{ heroe.publisher }}</mat-list-item>
+                    <mat-list-item><strong>Primera aparición: </strong>{{ heroe.first_appearance }}</mat-list-item>
+                    <mat-list-item *ngIf="heroe.characters.search(',') !== -1">
+                        <strong>Otros: </strong>{{ heroe.characters }}
+                    </mat-list-item>
+                </mat-list>
+
+                <button mat-button mat-raised-button color="accent" class="ml-3" (click)="goBack()">
+                    Volver a la lista de héroes
+                </button>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</ng-container>
+
+<ng-template #loading>
+    <mat-grid-list cols="1">
+        <mat-grid-tile>
+            <mat-spinner></mat-spinner>
+        </mat-grid-tile>
+    </mat-grid-list>
+</ng-template>
+
