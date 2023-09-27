@@ -142,7 +142,42 @@
       "alter_ego": "Norrin Radd",
       "first_appearance": "The Fantastic Four #48",
       "characters": "Norrin Radd"
+    },
+    {
+      "id": "marvel-deadpool",
+      "superhero": "Deadpool",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Deadpool",
+      "first_appearance": "deadpool 1",
+      "characters": "Deadpool",
+      "alt_img": "https://sm.ign.com/t/ign_es/screenshot/default/dedpul_ruhu.1200.jpg"
+    },
+    {
+      "id": "marvel-antorcha-humana",
+      "superhero": "Antorcha Humana",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Johnny Storm",
+      "first_appearance": "Los 4 Fantásticos #1",
+      "characters": "Johnny Storm",
+      "alt_img": "https://i.pinimg.com/1200x/82/ed/95/82ed95ddcddf78a463d1e703acd6f64b.jpg"
+    },
+    {
+      "id": "marvel-storm",
+      "superhero": "Storm",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Ororo Munroe",
+      "first_appearance": "X-Men #1",
+      "characters": "Ororo Munroe",
+      "alt_img": "https://cdn.marvel.com/u/prod/marvel/i/mg/a/03/59666a50a9432/clean.jpg"
+    },
+    {
+      "id": "marvel-negasonic-teenage-warhead",
+      "superhero": "Negasonic Teenage Warhead",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Ellie Phimister",
+      "first_appearance": "New X-Men #115",
+      "characters": "Ellie Phimister",
+      "alt_img": "https://cdna.artstation.com/p/assets/images/images/009/804/210/large/the-frisbeeman-01-ne.jpg?1520984373"
     }
   ]
 }
-
