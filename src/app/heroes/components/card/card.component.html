@@ -9,7 +9,12 @@
     </mat-card-header>
 
     <img mat-card-image [src]="heroe | heroImage" alt="{{heroe.superhero}}">
-
+    <!--
+    <img
+    [src]="heroe | heroImage"
+    alt="{{heroe.superhero}}"
+    style="object-fit: cover; overflow: hidden; height: 400px;">
+    -->
     <mat-card-content>
         <h4>{{ heroe.publisher }}</h4>
         <p>
