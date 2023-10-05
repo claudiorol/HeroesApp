@@ -23,7 +23,7 @@
 
         <span class="spacer"></span>
 
-        <span *ngIf="user">{{ user.user }}</span>
+        <span *ngIf="user" [ngStyle]="{'margin-right': '1rem'}">{{ user.user }}</span>
 
         <button mat-button (click)="onLogout()">
             Logout
