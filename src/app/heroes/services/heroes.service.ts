@@ -31,8 +31,7 @@ export class HeroesService {
 
   addHeroe(heroe: Heroe): Observable<Heroe> {
     let superhero = heroe.superhero.replaceAll(" ","-").toLowerCase();
-    heroe.id = heroe.publisher == "Marvel Comics" ? "marvel-"+superhero : "dc-"+superhero;
-    console.log(heroe.id);
+    heroe.id = heroe.publisher == "Marvel Comics" ? "marvel-" + superhero : "dc-" + superhero;
     return this.httpClient.post<Heroe>(`${this.baseUrl}/heroes`, heroe);  //primer argumento la URL, segundo argumento el heroe que queremos añadir
   }
 
